@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velara Hotel — Galereya</title>
+<style>
+  :root{
+    --bg: #e8d3ac;
+    --panel: #fffdf7;
+    --panel-hover: #fbecc9;
+    --gold: #b07f2e;
+    --gold-soft: rgba(176,127,46,0.35);
+    --cream: #3a2a1a;
+    --muted: #7d6a52;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0; padding:0;
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'Manrope','Segoe UI',sans-serif;
+  }
+  body{
+    background-image: radial-gradient(circle at 50% -10%, rgba(176,127,46,0.22), transparent 55%);
+    padding: 48px 20px 60px;
+  }
+  .wrap{ max-width: 720px; margin: 0 auto; }
+  header{ text-align:center; margin-bottom: 40px; }
+  header a.back{
+    display:inline-block; margin-bottom:18px;
+    font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+    color: var(--muted); text-decoration:none;
+  }
+  header a.back:hover{ color: var(--gold); }
+  h1{
+    font-family:'Playfair Display',Georgia,serif;
+    font-weight:500; font-size:28px; letter-spacing:.05em; margin:0 0 8px;
+  }
+  .subtitle{ font-size:12.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
+  .rule{ width:40px; height:1px; background:var(--gold); margin:16px auto 0; opacity:.7; }
+
+  section{ margin-bottom: 44px; }
+  .section-title{
+    margin-bottom: 16px;
+  }
+  .section-title h2{
+    font-family:'Playfair Display',Georgia,serif;
+    font-size:19px; font-weight:500; color: var(--gold); margin:0;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .tile{
+    position: relative;
+    aspect-ratio: 4/3;
+    background: var(--panel);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .tile img{
+    width:100%; height:100%;
+    object-fit: cover;
+    display:block;
+  }
+  .tile .empty{
+    position:absolute; inset:0;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:6px;
+    border: 1px dashed rgba(176,127,46,0.35);
+    border-radius: 10px;
+    color: var(--muted);
+    font-size: 11px;
+    text-align:center;
+    padding: 10px;
+  }
+  .tile .empty .plus{
+    width:26px;height:26px;border-radius:50%;
+    border:1px solid var(--gold-soft);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--gold); font-size:14px;
+  }
+
+  footer{
+    text-align:center; margin-top:40px;
+    font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--muted); opacity:.7;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="index.html">← Orqaga</a>
+    <h1>GALEREYA</h1>
+    <div class="subtitle">Velara Hotel</div>
+    <div class="rule"></div>
+  </header>
+
+  <section>
+    <div class="section-title"><h2>Qo'shimcha krovat bilan xona</h2></div>
+    <div class="grid">
+      <div class="tile">
+        <img src="krovat-1.jpg" alt="Qo'shimcha krovat bilan xona" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="empty" style="display:none;"><div class="plus">+</div>krovat-1.jpg</div>
+      </div>
+      <div class="tile">
+        <img src="krovat-2.jpg" alt="Qo'shimcha krovat bilan xona" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="empty" style="display:none;"><div class="plus">+</div>krovat-2.jpg</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title"><h2>Standart xona</h2></div>
+    <div class="grid">
+      <div class="tile">
+        <img src="standart-1.jpg" alt="Standart xona" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="empty" style="display:none;"><div class="plus">+</div>standart-1.jpg</div>
+      </div>
+      <div class="tile">
+        <img src="standart-2.jpg" alt="Standart xona" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="empty" style="display:none;"><div class="plus">+</div>standart-2.jpg</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title"><h2>Semi-lyuks / Lyuks xona</h2></div>
+    <div class="grid">
+      <div class="tile">
+        <img src="lyuks-1.jpg" alt="Lyuks xona" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="empty" style="display:none;"><div class="plus">+</div>lyuks-1.jpg</div>
+      </div>
+      <div class="tile">
+        <img src="lyuks-2.jpg" alt="Lyuks xona" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="empty" style="display:none;"><div class="plus">+</div>lyuks-2.jpg</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title"><h2>Nonushta / Restoran</h2></div>
+    <div class="grid">
+      <div class="tile">
+        <img src="restoran-1.jpg" alt="Restoran" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="empty" style="display:none;"><div class="plus">+</div>restoran-1.jpg</div>
+      </div>
+      <div class="tile">
+        <img src="restoran-2.jpg" alt="Restoran" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="empty" style="display:none;"><div class="plus">+</div>restoran-2.jpg</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>Velara Hotel · Toshkent</footer>
+</div>
+</body>
+</html>
